@@ -1,3 +1,4 @@
+#I written it in most primitive way, will try to improve it. 
 import random
 
 target = ['A', 'B', 'C', 'D']
@@ -5,7 +6,7 @@ target_copy = ['', '', '', '']
 randomNumbers = []
 
 n = (len(target) - 1)
-i = 0
+i = 3
 while True:
     a = random.randint(0, n)
     if(a in randomNumbers):
@@ -15,7 +16,7 @@ while True:
         target_copy.insert(a, target[i])
         print("the index is:", a)
         randomNumbers.append(a)
-        i += 1
+        i -= 1
         print(target_copy)
 
     if(target[0] in target_copy and target[1] in target_copy and target[2] in target_copy and target[3] in target_copy):
