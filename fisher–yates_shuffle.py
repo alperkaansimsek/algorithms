@@ -1,4 +1,4 @@
-#I written it in most primitive way, will try to improve it. 
+# I wrote it in the most primitive way and will try to improve it.
 import random
 
 target = ['A', 'B', 'C', 'D']
